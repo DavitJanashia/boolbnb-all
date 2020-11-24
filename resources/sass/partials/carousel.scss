@@ -1,0 +1,136 @@
+.mycarousel{
+      position:relative;
+      // width:600px;
+      height:300px;
+      margin: auto;
+
+      .prev {
+        position:absolute;
+        z-index: 800;
+        top:50%;
+        left:0;
+        cursor: pointer;
+        transform: translateY(-50%);
+      }
+
+      .next {
+        position:absolute;
+        z-index: 800;
+        top:50%;
+        right:0;
+        cursor: pointer;
+        transform: translateY(-50%);
+      }
+
+      .next > i, .prev > i {
+        font-size: 30px;
+        color:#fc3c60;
+      }
+
+      .carousel-images{
+        opacity:.5;
+        width:325px;
+        height:200px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50% , -50%);
+        overflow: hidden;
+        transition: all 0.2s;
+          & > img {
+            width:100%;
+            height:auto;
+          }
+        }
+        .active{
+          opacity:1;
+          z-index: 6;
+        }
+      }
+
+      .carousel-images.dim {
+
+        width: 80%;
+      }
+
+
+
+// ----------------------------------------------------------------------
+
+
+// sezione relativa alle Preview delle Immagini CREATE UPDATE----------------------
+
+
+.stored-image {
+              img{ width:100%; }
+           }
+
+    .imgCreatePreview, .imgEditPreview  {
+    margin:auto;
+    border:1px solid lightgrey;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &>img {
+
+      max-height:140px;
+      max-width: 150px
+    }
+}
+// ----------------------------------------------------------------------
+
+@media all and (max-width: 600px) {
+
+  .mycarousel{
+        // width:400px;
+        height:300px;
+        margin: auto;
+
+        .carousel-images{
+          width:300px;
+          height:180px;
+        }
+    }
+
+  }
+
+  // ----------------------------------------------------------------------
+
+  // @media all and (min-width: 961px) and (max-width: 991px) {
+  //
+  //   .mycarousel{
+  //               .prev {
+  //                 left:0;
+  //               }
+  //               .next {
+  //                 right:0;
+  //               }
+  //         }
+  //   }
+
+    // ----------------------------------------------------------------------
+
+    @media all and (min-width: 992px) and (max-width: 1200px) {
+
+      .mycarousel{
+                  .prev {
+                    left:35px;
+                  }
+                  .next {
+                    right:35px;
+                  }
+            }
+      }
+
+      @media all and (min-width: 1200px) and (max-width: 2000px) {
+
+        .mycarousel{
+                    .prev {
+                      left:55px;
+                    }
+                    .next {
+                      right:55px;
+                    }
+              }
+        }

@@ -1,0 +1,154 @@
+section#section_edit, section#section_create{
+  // padding:80px 0px;
+  // background-image: url('../img/modern_pattern.jpg');
+  background-repeat: repeat-y;
+  background-repeat: repeat-x;
+  background-repeat-y: repeat;
+  width: 100%;
+
+  background-attachment: fixed;
+
+  h1{font-size: 22px}
+
+  h2{font-size: 20px}
+}
+
+section#section_show {
+      padding-top: 80px;
+
+      h1{font-size: 22px}
+
+      h2{font-size: 20px}
+
+
+    }
+
+
+  section#section_home{
+
+    .spons-card{
+      margin-top:40px;
+    }
+
+
+    .mycarousel{
+          min-width:240px;
+          max-height: 140px;
+
+          .carousel-images.dim.spons{
+            margin-top:40px;
+            width:200px;
+          }
+
+          }
+// }
+    // padding:80px 0px;
+    // background-image: url('../img/jumbo3.jpg');
+    // background-repeat: repeat-y;
+    // background-repeat: repeat-x;
+    // background-repeat-y: repeat;
+    // width: 100%;
+    // height: 300px;
+
+          .sponsorship.card img.scaleOnHover{
+          transition: all 0.3s ;
+          }
+
+          .sponsorship.card:hover img.scaleOnHover{
+          transform: scale(1.02);
+        }
+
+        .sponsored-label {
+        border-top: 3px solid transparent;
+        border-right: 100px solid #FF5170;
+        border-bottom: 95px solid transparent;
+        position: absolute;
+        top: -6px;
+        right: -4px;
+        transform: rotate(1deg);
+          // background-color: #FF5170;
+        }
+
+        .sponsortext{
+          transform: rotate(45deg);
+          position: absolute;
+          top: 25px;
+          top: 20px;
+          right: -4px;
+          color: white;
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+  }
+
+  section#section_user_apartment_list{
+    background-position:0 0;
+    padding-top:80px;
+    width:100%;
+      // background-image: url('../img/jumbo.jpg');
+    // background-image: url('../img/house_pattern.jpg');
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-repeat-y: repeat;
+
+    .mycarousel.list{
+
+          min-width:240px;
+          // height: 0;
+          max-height: 140px;
+
+          .carousel-images{
+            // opacity:.5;
+            width:100%;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50% , -50%);
+            overflow: hidden;
+            transition: all 0.2s;
+            margin-top: 15px;
+              & > img {
+                width:100%;
+                height:auto;
+              }
+            }
+          }
+}
+// Braintree view
+  section#sponsorship {
+
+    background-position:0 0;
+    padding-top:80px;
+    width:100%;
+    h1{font-size: 22px; margin-top:15px;}
+    h2{font-size: 20px}
+    line-height: 2;
+
+  }
+
+  @media all and (max-width: 993px) {
+
+
+  section#section_user_apartment_list{
+
+
+              .mycarousel.list{
+
+                height:180px;
+
+                .carousel-container{
+                  height: 146px;
+                  position: relative;
+                  overflow: hidden;
+                }
+
+
+
+              }
+            }
+
+
+
+
+    }

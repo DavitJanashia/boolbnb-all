@@ -1,0 +1,132 @@
+header{
+  z-index: 999;
+  top:0;
+  margin-top:0;
+
+  width:100%;
+
+    #log-reg{
+      flex-direction: row;
+      align-items: center;
+    }
+    #log-reg > li{
+      margin-left: 10px;
+      width: 70px;
+      color:grey;
+      background-color: white;
+      box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.3);
+      font-family: arial;
+    }
+    #regist-1, #regist-2{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+    }
+    #regist-1 span{
+      color:white;
+    }
+    #regist-2 span{
+      color:grey;
+    }
+    .dropdown-toggle::after {
+      display:none;
+    }
+    #my-profile > a {
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+    }
+    #my-profile > a img{
+      margin:0;
+      padding:0;
+    }
+
+    #my-profile > a i{
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+    }
+    #mynavbar{
+      max-width:1200px ;
+      width:90%;
+      margin:auto;
+      padding: 20px 0;
+      height: 80px;
+    }
+
+    #div-logo{
+      height:100%;
+    }
+    #text-logo{
+      margin:0;
+      padding:0;
+      padding-left:8px;
+      font-size: 30px;
+      font-family: arial;
+    }
+    #text-pinklogo{
+      color:#fc3c60;
+      margin:0;
+      padding:0;
+      padding-left:8px;
+      font-size: 30px;
+      font-family: arial;
+    }
+
+    #logo{
+      // width: 140px;
+      height: 100%;
+    }
+
+    #a-logo{
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    #user{
+      width: 35px;
+      height: 25px;
+      margin-top: 5px;
+    }
+
+    #navbarDropdown{
+      color:grey;
+    }
+
+    .dropdown-menu.dropdown-menu-right{
+      -webkit-filter: drop-shadow(5px 5px 5px  rgba(0,0,0,0.3));
+      border:none;
+    }
+
+    .dropdown-item{
+      width:255px;
+      line-height: 2;
+    }
+
+
+
+}
+
+#bg-white{
+  background: white;
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+@media all and (max-width: 767px) {
+
+  header{
+
+      .dropdown-item{
+        width:100vw!important;
+        line-height: 4;
+        }
+
+    }
+
+
+
+}
